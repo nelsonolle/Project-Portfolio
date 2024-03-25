@@ -1,0 +1,14 @@
+body {
+    background-image: url('./gray-texture.jpg');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    margin: 0;
+    background-color:darkolivegreen;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+}
