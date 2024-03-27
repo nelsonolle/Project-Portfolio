@@ -1,14 +1,41 @@
 body {
     background-image: url('./gray-texture.jpg');
     background-size: cover;
+    margin: 0;
+    font-family: "input-mono", monospace;
 }
 
 header {
     display: flex;
     margin: 0;
-    background-color:darkolivegreen;
+    height: 78px;
+    background-color:rgba(85, 107, 47, 0.69);
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1, #nav-bar {
+    margin: auto 3rem;
 }
 
 #nav-bar ul li {
     display: inline-block;
+    margin: auto 3rem;
+}
+
+main {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+#bio {
+    flex-direction: column;
+    width: 600px;
+}
+
+#profile-pic {
+    width: 600px;
+    height: auto;
+    float: right;
 }
