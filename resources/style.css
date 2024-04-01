@@ -6,6 +6,9 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     margin: 0;
     height: 78px;
@@ -14,7 +17,11 @@ header {
     justify-content: space-between;
 }
 
-h1, #nav-bar {
+#logo {
+    font-size: 36px;
+}
+
+#logo, #nav-bar {
     margin: auto 3rem;
 }
 
@@ -25,7 +32,7 @@ h1, #nav-bar {
 
 main {
     display: flex;
-    margin: 5%;
+    margin: 10% 5% 5% 5%;
     justify-content: space-between;
 }
 
@@ -38,4 +45,34 @@ main {
     width: 600px;
     height: auto;
     float: right;
+}
+
+h2 {
+    margin: 5%;
+}
+
+#skills {
+    display: flex;
+    margin: 5%;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 100px;
+    height: auto;
+}
+
+#projects {
+    display: flex;
+    margin: 5%;
+    justify-content: space-around;
+}
+
+.project {
+    width: 300px;
+    height: auto;
+}
+
+#contact-container {
+    margin: 10% 5% 5% 5%;
 }
