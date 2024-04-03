@@ -28,8 +28,14 @@
             <p>
                 Aside from learning programming, my current current dayjob consists of building stainless steel furniture and products. And by night I am a music maker, working in multiple digital audio workstations, playing the piano and guitar.
             </p>
+            <p>
+                Fun fact! I've been programing for
+                <span id="time-container">0</span> seconds!
+              </p>
         </div>
-        <img id="profile-pic" src="./resources/profile pic 2.jpg" alt="profile photo">
+        <div id="profile-pic-container">
+            <img id="profile-pic" src="./resources/profile pic 2.jpg" alt="profile photo">
+        </div>
     </main>
     <h2>skills:</h2>
     <div id="skills">
@@ -43,4 +49,19 @@
         <a href="https://nelsonolle.github.io/Guns-n-Stuff-Club/"><img class="project" src="./resources/Screenshot 2024-03-25 at 6.04.42 PM.png" alt="web project"></a>
     </div>
 </body>
+<script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "7-21-2023";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
 </html>
